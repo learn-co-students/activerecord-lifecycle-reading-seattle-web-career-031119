@@ -1,9 +1,10 @@
 <%= form_for(@post) do |f| %>
+  My Edit:
   <label>Post title:</label><br>
-  <%= f.text_field :title %><br>
+  <%= f.text_field :title, id: 'post[title]' %><br>
 
   <label>Post Description</label><br>
-  <%= f.text_area :description %><br>
+  <%= f.text_area :description, id: 'post[description]' %><br>
 
   <%= f.submit %>
 <% end %>
